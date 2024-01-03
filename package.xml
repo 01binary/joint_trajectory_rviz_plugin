@@ -1,0 +1,32 @@
+<package format="2">
+  <name>joint_trajectory_rviz_plugin</name>
+  <version>1.0.0</version>
+  <description>Visualizes Joint Trajectory Controller State in RViz</description>
+
+  <author email="valeriy.novytskyy@01binary.us">Valeriy Novytskyy</author>
+  <maintainer email="valeriy.novytskyy@01binary.us">Valeriy Novytskyy</maintainer>
+
+  <license>GNUv3</license>
+
+  <url type="website">www.01binary.us</url>
+  <url type="bugtracker">https://github.com/01binary/joint_trajectory_rviz_plugin/issues</url>
+  <url type="repository">https://github.com/01binary/joint_trajectory_rviz_plugin</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>pkg-config</buildtool_depend>
+
+  <build_depend>class_loader</build_depend>
+  <build_depend>libqt5-opengl-dev</build_depend>
+  <build_depend>qtbase5-dev</build_depend>
+
+  <depend version_gte="1.11.2">pluginlib</depend>
+  <depend>rosconsole</depend>
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>rviz</depend>
+
+  <export>
+    <rviz plugin="${prefix}/joint_trajectory_rviz_plugin.xml"/>
+  </export>
+
+</package>

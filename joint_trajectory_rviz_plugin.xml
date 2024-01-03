@@ -1,0 +1,11 @@
+<library path="lib/libjoint_trajectory_rviz_plugin">
+  <class
+    name="joint_trajectory_rviz_plugin"
+    type="JointTrajectoryRVizPlugin"
+    base_class_type="rviz::Display"
+  >
+    <description>
+      Visualizes joint trajectory controller
+    </description>
+  </class>
+</library>
