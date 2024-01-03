@@ -44,6 +44,7 @@ catkin_package(
   INCLUDE_DIRS
     include
   CATKIN_DEPENDS
+    pluginlib
     roscpp
     rviz
 )

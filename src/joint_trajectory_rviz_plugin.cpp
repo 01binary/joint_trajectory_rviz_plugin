@@ -3,13 +3,19 @@
 \*----------------------------------------------------------*/
 
 #include "joint_trajectory_rviz_plugin.h"
-#include <class_loader/class_loader.hpp>
+#include <pluginlib/class_list_macros.h>
 
 /*----------------------------------------------------------*\
-| Definitions
+| Namespace
 \*----------------------------------------------------------*/
 
-CLASS_LOADER_REGISTER_CLASS(JointTrajectoryRVizPlugin, rviz::Display)
+using namespace tools;
+
+/*----------------------------------------------------------*\
+| Exports
+\*----------------------------------------------------------*/
+
+PLUGINLIB_EXPORT_CLASS(tools::JointTrajectoryRVizPlugin, rviz::Display)
 
 /*----------------------------------------------------------*\
 | JointTrajectoryRVizPlugin implementation
@@ -36,4 +42,3 @@ void JointTrajectoryRVizPlugin::update(float wall_dt, float ros_dt)
 void JointTrajectoryRVizPlugin::changedSomething()
 {
 }
-
